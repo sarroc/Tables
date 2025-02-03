@@ -7,11 +7,21 @@
   </head>
   <body>
     <h1>Forms in HTML</h1>
-    <form action="">
-      <input type="text" placeholder="username" />
-      <input type="password" placeholder="password" />
-      <input type="color" />
-      <input type="number" placeholder="enter a number" />
+    <form action="/search">
+      <label for="username">enter username</label>
+      <input id="username" type="text" placeholder="username" />
+      <p>
+        <label for="password">enter password</label>
+        <input id="password" type="password" placeholder="password" />
+      </p>
+      <p>
+        <label for="color">pick a color</label>
+        <input id="color" type="color" />
+      </p>
+      <p>
+        <label for="number">enter a number</label>
+        <input id="number" type="number" placeholder="enter a number" />
+      </p>
     </form>
   </body>
 </html>
