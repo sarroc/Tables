@@ -9,23 +9,38 @@
     <h1>Forms in HTML</h1>
     <form action="/search">
       <label for="username">enter username</label>
-      <input id="username" type="text" placeholder="username" />
+      <input id="username" type="text" placeholder="username" name="username" />
       <p>
         <label for="password">enter password</label>
-        <input id="password" type="password" placeholder="password" />
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          name="password"
+        />
       </p>
       <p>
         <label for="color">pick a color</label>
-        <input id="color" type="color" />
+        <input id="color" type="color" name="color" />
       </p>
       <p>
         <label for="number">enter a number</label>
-        <input id="number" type="number" placeholder="enter a number" />
+        <input
+          id="number"
+          type="number"
+          placeholder="enter a number"
+          name="num"
+        />
       </p>
       <!-- button inside of a form, default behavior to submit the form -->
       <button>Submit</button>
     </form>
+
     <!-- button outisde of a form, no default behavior -->
-    <button>Button</button>
+    <button>Outside Form</button>
+    <form action="https://www.reddit.com/search">
+      <input type="text" name="q" />
+      <button>Search Reddit</button>
+    </form>
   </body>
 </html>
